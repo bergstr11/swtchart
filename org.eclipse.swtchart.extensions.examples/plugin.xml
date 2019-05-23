@@ -2,13 +2,6 @@
 <plugin>
 
    <extension
-         id="org.eclipse.swtchart.extensions.demos.fragment"
-         point="org.eclipse.e4.workbench.model">
-      <fragment
-            uri="fragment.e4xmi">
-      </fragment>
-   </extension>
-   <extension
          point="org.eclipse.ui.preferencePages">
       <page
             class="org.eclipse.swtchart.extensions.examples.preferences.PreferencePage"
@@ -105,6 +98,273 @@
       <MenuItemSupplier
             MenuEntry="org.eclipse.swtchart.extensions.examples.menu.ResetYAxisHandler">
       </MenuItemSupplier>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.eclipse.swtchart.extensions.examples.perspective.OverviewPerspective"
+            id="org.eclipse.swtchart.extensions.examples.perspective.overview"
+            name="Overview">
+      </perspective>
+      <perspective
+            class="org.eclipse.swtchart.extensions.examples.perspective.SecondPerspective"
+            id="org.eclipse.swtchart.extensions.examples.perspective.second"
+            name="Second">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_1_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries1"
+            name="Line Series 1"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_3_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries3"
+            name="Line Series 3"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_4_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries4"
+            name="Line Series 4"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_2_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries2"
+            name="Line Series 2"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_5_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries5"
+            name="Line Series 5"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_6_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.lineseries6"
+            name="Line Series 6"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_1_1_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries1_1"
+            name="Bar Series 1 / 1"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_1_2_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries1_2"
+            name="Bar Series 1 / 2"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_1_3_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries1_3"
+            name="Bar Series 1 / 3"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_3_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries3"
+            name="BarSeries 3"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$ScatterSeries_2_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.scatterseries2"
+            name="Scatter Series 2"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$ScatterSeries_1_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.scatterseries1"
+            name="Scatter Series 1"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_2_1_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries2_1"
+            name="Bar Series 2 / 1"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_2_2_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.barseries2_2"
+            name="Bar Series 2 / 2"
+            restorable="true">
+      </view>
+      <view
+            class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$ScatterSeries_3_Part"
+            icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            id="org.eclipse.swtchart.extensions.examples.part.scatterseries3"
+            name="Scatter Series 3"
+            restorable="true">
+      </view>
+
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_Selection_Part" 
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_Selection_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="Line Series Selection"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$MeasurementSeries_1_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.MeasurementSeries_1_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="Measurement Series 1"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$MeasurementSeries_2_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.MeasurementSeries_2_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="Measurement Series 2"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_7_HighBackground_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_7_HighBackground_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries 7 HighBackground"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$MeasurementSeries_3_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.MeasurementSeries_3_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="MeasurementSeries_3"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_7_Normal_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_7_Normal_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_7_Normal"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_4_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.BarSeries_4_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="BarSeries_4"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_8_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_8_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_8"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$BarSeries_Preferences_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.BarSeries_Preferences_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="BarSeries_Preferences"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_9_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_9_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_9"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_Edit_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_Edit_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_Edit"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$ScatterSeries_Edit_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.ScatterSeries_Edit_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="ScatterSeries_Edit"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_10_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_10_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_10"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_Preferences_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_Preferences_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_Preferences"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$ScatterSeries_Preferences_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.ScatterSeries_Preferences_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="ScatterSeries_Preferences"
+            restorable="true">
+      </view>
+
+	<view class="org.eclipse.swtchart.extensions.examples.perspective.ChartView$LineSeries_Random_Part"
+
+		id="org.eclipse.swtchart.extensions.examples.part.LineSeries_Random_Part" icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+            name="LineSeries_Random"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="SWTChart">
+            <command
+                  commandId="org.eclipse.swtchart.extensions.examples.showoverview"
+                  label="Overview Perspective"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.swtchart.extensions.examples.showsecond"
+                  label="Second Perspective"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.eclipse.swtchart.extensions.examples.perspective.ShowOverviewHandler"
+            id="org.eclipse.swtchart.extensions.examples.showoverview"
+            name="Show Overview">
+      </command>
+      <command
+            defaultHandler="org.eclipse.swtchart.extensions.examples.perspective.ShowSecondHandler"
+            id="org.eclipse.swtchart.extensions.examples.showsecond"
+            name="Show Second">
+      </command>
    </extension>
 
 </plugin>
