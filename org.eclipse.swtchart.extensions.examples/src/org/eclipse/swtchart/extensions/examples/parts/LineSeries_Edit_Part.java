@@ -93,6 +93,9 @@ public class LineSeries_Edit_Part extends Composite {
 		this.setLayout(new GridLayout(1, true));
 		tabFolder = new TabFolder(this, SWT.BOTTOM);
 		tabFolder.setLayoutData(new GridData(GridData.FILL_BOTH));
+		createChartTabItem();
+		createTableTabItems();
+
 		tabFolder.addSelectionListener(new SelectionAdapter() {
 
 			@Override
@@ -107,8 +110,6 @@ public class LineSeries_Edit_Part extends Composite {
 				}
 			}
 		});
-		createChartTabItem();
-		createTableTabItems();
 	}
 
 	private void createChartTabItem() {

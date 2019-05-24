@@ -111,6 +111,11 @@
             id="org.eclipse.swtchart.extensions.examples.perspective.second"
             name="Second">
       </perspective>
+      <perspective
+            class="org.eclipse.swtchart.extensions.examples.perspective.SWTChartPerspective"
+            id="org.eclipse.swtchart.extensions.examples.perspective.swtchart"
+            name="SWTChart">
+      </perspective>
    </extension>
    <extension
          point="org.eclipse.ui.views">
@@ -332,6 +337,13 @@
             name="LineSeries_Random"
             restorable="true">
       </view>
+ <view
+       class="org.eclipse.swtchart.extensions.examples.perspective.SWTChartView"
+       icon="platform:/plugin/org.eclipse.swtchart.extensions/icons/16x16/set_range.gif"
+       id="org.eclipse.swtchart.extensions.examples.view.swtchart"
+       name="SWTChart Examples"
+       restorable="false">
+ </view>
    </extension>
    <extension
          point="org.eclipse.ui.menus">
@@ -350,6 +362,11 @@
                   label="Second Perspective"
                   style="push">
             </command>
+            <command
+                  commandId="org.eclipse.swtchart.extensions.examples.showswtchart"
+                  label="SWTChart Perspective"
+                  style="push">
+            </command>
          </menu>
       </menuContribution>
    </extension>
@@ -364,6 +381,11 @@
             defaultHandler="org.eclipse.swtchart.extensions.examples.perspective.ShowSecondHandler"
             id="org.eclipse.swtchart.extensions.examples.showsecond"
             name="Show Second">
+      </command>
+      <command
+            defaultHandler="org.eclipse.swtchart.extensions.examples.perspective.ShowSWTChartHandler"
+            id="org.eclipse.swtchart.extensions.examples.showswtchart"
+            name="Show SWTChart">
       </command>
    </extension>
 

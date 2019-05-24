@@ -10,3 +10,5 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.swtchart;bundle-version="0.7.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.swtchart.examples,
+ org.eclipse.swtchart.examples.advanced
